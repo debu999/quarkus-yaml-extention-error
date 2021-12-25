@@ -1,2 +1,22 @@
 greeting:
-  message: "hello"
+    message: hello
+kogito:
+    persistence:
+        optimistic:
+            lock: true
+        transaction:
+            enabled: true
+        type: mongodb
+quarkus:
+    datasource:
+        devservices:
+            enabled: false
+    kafka:
+        devservices:
+            enabled: false
+    kogito:
+        devservices:
+            enabled: false
+    mongodb:
+        connection-string: mongodb://localhost:27017
+        database: kogito
